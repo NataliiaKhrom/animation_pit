@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <style media="screen">
+
+
+
+
+    .principle {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+
+    .shape {
+      background: #325d70;
+      /* border: 1em solid #fff; */
+      width: 7em;
+      height: 7em;
+      position: absolute;
+      top: calc(50% - 2em);
+      left: calc(50% - 2em);
+    }
+
+    .shape2 {
+      background: #7ad5ff;
+      /* border: 1em solid #fff; */
+      width: 2em;
+      height: 2em;
+      position: absolute;
+      top: calc(50% - 2em);
+      left: calc(50% - 2em);
+    }
+
+    .cube {
+      background-color: #7ad5ff;
+      border-radius: 0px;
+      position: absolute;
+    	width: 6em;
+      height: 4em;
+      top: calc(50% + 13em);
+      left: calc(30% - 2em);
+    }
+
+    .cube2 {
+      background-color: #7ad5ff;
+      border-radius: 0px;
+      position: absolute;
+    	width: 10em;
+      height: 4em;
+      top: calc(50% + 13em);
+      left: calc(30% + 15em);
+    }
+    .cube3 {
+      background-color: #7ad5ff;
+      border-radius: 0px;
+      position: absolute;
+      width: 11em;
+      height: 4em;
+      top: calc(50% + 13em);
+      left: calc(30% + 4em);
+    }
+    .cube4 {
+      background-color: #7ad5ff;
+      border-radius: 0px;
+      position: absolute;
+      width: 5em;
+      height: 4em;
+      top: calc(50% + 13em);
+      left: calc(30% + 25em);
+    }
+
+    .cube5 {
+      background-color:#7ad5ff;
+      border-radius: 0px;
+      position: absolute;
+      width: 5em;
+      height: 4em;
+      top: calc(50% + 13em);
+      left: calc(30% + 35em);
+    }
+
+    .cube6  {
+      background-color: #7ad5ff;
+      border-radius: 0px;
+      position: absolute;
+      width: 5em;
+      height: 4em;
+      top: calc(50% + 13em);
+      left: calc(30% + 30em);
+    }
+
+
+
+
+
+
+    /******* ШАР 1 *******/
+   .container-for-container {animation: transparent 2s;
+                   Animation-iteration-count: 1;
+                 }
+
+       @keyframes transparent {
+             0% {opacity: 0}
+             100% {opacity: 0} }
+
+
+    .sevena .shape-container {
+      animation: move-right 2s infinite cubic-bezier(.37,.55,.49,.67);
+      animation-delay: 2s;
+      position: absolute;
+      z-index: -1;
+      left: calc(50% - 4em);
+      top: calc(50% - 4em);}
+
+    .sevena .shape {
+      animation: bounce 2s infinite linear;
+      animation-delay: 2s;
+      border-radius: 50%;
+      position: relative;
+      z-index: -1;
+      left: auto;
+      top: auto;}
+
+    @keyframes move-right {
+      0% {
+        transform: translateX(-20em);
+        opacity: 1;}
+      77% {
+        opacity: 1;}
+      90%, 100% {
+        transform: translateX(20em);
+        opacity: 0;}
+    }
+
+    @keyframes bounce {
+/* ВЕРХ */     0% {
+        transform: translateY(-30em);
+        animation-timing-function: cubic-bezier(.51,.01,.79,.02);}
+
+      20% {transform: scaleX(.7) scaleY(1.3);}
+
+/* ЗЕМЛЯ */       25% {
+        transform: translateY(13em) scaleX(1.2) scaleY(.8);
+        animation-timing-function: cubic-bezier(.19,1,.7,1);  }
+
+     30% {transform: scaleX(.9) scaleY(1.1);}
+
+  /* ВЕРХ */    35% {
+        transform: translateY(-5em) scaleX(1) scaleY(1);
+        animation-timing-function: cubic-bezier(.51,.01,.79,.02); }
+
+      40% {transform: scaleX(.9) scaleY(1.1);}
+
+/* ЗЕМЛЯ */         45% {
+        transform: translateY(13em) scaleX(1.2) scaleY(.8);
+        animation-timing-function: cubic-bezier(.19,1,.7,1);}
+
+      50% {transform: scaleX(.9) scaleY(1.1);}
+
+/* ВЕРХ */      55% {
+        transform: translateY(0em) scaleX(1) scaleY(1);
+        animation-timing-function: cubic-bezier(.51,.01,.79,.02);}
+
+      60% {transform: scaleX(.9) scaleY(1.1);}
+
+/* ЗЕМЛЯ */      65% {transform: translateY(13em) scaleX(1.2) scaleY(.8);
+                animation-timing-function: cubic-bezier(.19,1,.7,1)}
+
+   70%, 100% {
+        transform: translateY(10em) scaleX(1) scaleY(1);
+        animation-timing-function: cubic-bezier(.19,1,.7,1);}
+  }
+
+  /******* ШАР 2 *******/
+ .container-for-container2 {animation: transparent 2s;
+                 Animation-iteration-count: 1;
+               }
+
+     @keyframes transparent {
+           0% {opacity: 0}
+           100% {opacity: 0} }
+
+
+  .sevena .shape-container_two {
+    animation: move-right2 2s infinite cubic-bezier(.37,.55,.49,.67);
+    animation-delay: 2s;
+    position: absolute;
+    z-index: 1;
+    left: calc(50% - 7em);
+    top: calc(50% + 1em);}
+
+  .sevena .shape2 {
+    animation: bounce2 2s infinite linear;
+    animation-delay: 2s;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    left: auto;
+    top: auto;}
+
+  @keyframes move-right2 {
+    0% {
+      transform: translateX(-20em);
+      opacity: 1;}
+    77% {
+      opacity: 1;}
+    97%, 100% {
+      transform: translateX(20em);
+      opacity: 0;}
+  }
+
+  @keyframes bounce2 {
+/* ВЕРХ1 */     0% {
+      transform: translateY(-30em);
+      animation-timing-function: cubic-bezier(.51,.01,.79,.02);}
+
+    15% {transform: scaleX(.7) scaleY(1.3);}
+
+/* ЗЕМЛЯ1 */       20% {
+      transform: translateY(13em) scaleX(1.2) scaleY(.8);
+      animation-timing-function: cubic-bezier(.19,1,.7,1);  }
+
+   25% {transform: scaleX(.9) scaleY(1.1);}
+
+/* ВЕРХ2 */    30% {
+      transform: translateY(-5em) scaleX(1) scaleY(1);
+      animation-timing-function: cubic-bezier(.51,.01,.79,.02); }
+
+    35% {transform: scaleX(.9) scaleY(1.1);}
+
+/* ЗЕМЛЯ2 */         40% {
+      transform: translateY(13em) scaleX(1.2) scaleY(.8);
+      animation-timing-function: cubic-bezier(.19,1,.7,1);}
+
+    45% {transform: scaleX(.9) scaleY(1.1);}
+
+/* ВЕРХ3 */      50% {
+      transform: translateY(0em) scaleX(1) scaleY(1);
+      animation-timing-function: cubic-bezier(.51,.01,.79,.02);}
+
+    55% {transform: scaleX(.9) scaleY(1.1);}
+
+/* ЗЕМЛЯ3 */      60% {transform: translateY(13em) scaleX(1.2) scaleY(.8);
+                animation-timing-function: cubic-bezier(.19,1,.7,1);}
+
+      /* 64% {transform: scaleX(.9) scaleY(1.1);} */
+
+/* ВЕРХ4 */      68% {
+                transform: translateY(4em) scaleX(1) scaleY(1);
+                animation-timing-function: cubic-bezier(.51,.01,.79,.02);}
+
+    /*  72% {transform: scaleX(.9) scaleY(1.1);} */
+
+/* ЗЕМЛЯ4 */      76% {transform: translateY(13em) scaleX(1.2) scaleY(.8);
+                animation-timing-function: cubic-bezier(.19,1,.7,1);}
+
+    /*  79% {transform: scaleX(.9) scaleY(1.1);} */
+
+/* ВЕРХ5 */      82% {
+                      transform: translateY(9em) scaleX(1) scaleY(1);
+                      animation-timing-function: cubic-bezier(.51,.01,.79,.02);}
+
+    /* 85% {transform: scaleX(.9) scaleY(1.1);} */
+
+/* ЗЕМЛЯ5 */      88% {transform: translateY(13em) scaleX(1.2) scaleY(.8);
+                     animation-timing-function: cubic-bezier(.19,1,.7,1);}
+
+ 89%, 100% {
+      transform: translateY(10em) scaleX(1) scaleY(1);
+      animation-timing-function: cubic-bezier(.19,1,.7,1);}
+}
+
+
+  /******* КУБ *******/
+
+  .cube , .cube2 {animation: squashstretch 1.3s;
+    animation-timing-function: ease-in-out;
+    Animation-iteration-count: 1;
+  }
+
+
+ @keyframes squashstretch {
+  	0% {transform: translateY(-30em);}
+
+    20% {transform: translateY(0em) scaleX(1) scaleY(.4);}
+
+
+  	45% {transform: translateY(-10em) scaleX(1) scaleY(1.2);}
+
+  	60% {transform: translateY(0em) scaleX(1) scaleY(.4);}
+
+    70% {transform: translateY(-3em) scaleX(1) scaleY(1.1);}
+
+    80%, 100% {transform: translateY(0em) scaleX(1) scaleY(1);} }
+
+
+
+  .shape-container2 {animation: transparent 1s;
+              Animation-iteration-count: 1;
+            }
+
+  @keyframes transparent {
+        0% {opacity: 0}
+        100% {opacity: 0} }
+
+
+
+  .cube3 , .cube4 , .cube5 {animation: squashstretch2 1.5s;
+          animation-timing-function: ease-in-out;
+          Animation-iteration-count: 1;
+          animation-delay: 1s; }
+
+
+    @keyframes squashstretch2 {
+      0% {transform: translateY(-30em);}
+
+      15% {transform: translateY(2em) scaleX(1) scaleY(.2);}
+
+
+      30% {transform: translateY(-3em) scaleX(1) scaleY(1.1);}
+
+      60% {transform: translateY(2em) scaleX(1) scaleY(.1);}
+
+      80%, 100% {transform: translateY(0em) scaleX(1) scaleY(1);} }
+
+  .shape-container3 {animation: transparent 1.3s;
+                  Animation-iteration-count: 1;
+                }
+
+      @keyframes transparent {
+            0% {opacity: 0}
+            100% {opacity: 0} }
+
+
+
+      .cube6 {animation: squashstretch2 1.5s;
+              animation-timing-function: ease-in-out;
+              Animation-iteration-count: 1;
+              animation-delay: 1.3s; }
+
+
+        @keyframes squashstretch2 {
+          0% {transform: translateY(-30em);}
+
+          15% {transform: translateY(2em) scaleX(1) scaleY(.2);}
+
+
+          30% {transform: translateY(-3em) scaleX(1) scaleY(1.1);}
+
+          60% {transform: translateY(2em) scaleX(1) scaleY(.1);}
+
+          80%, 100% {transform: translateY(0em) scaleX(1) scaleY(1);} }
+
+
+
+    /* General styling */
+
+
+
+    body {
+      margin: 0;
+      background: black;
+      font-family: HelveticaNeue, Arial, Sans-serif;
+      color: #010812;
+    }
+
+    h1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-weight: 300;
+    }
+
+    h2 {
+      font-size: 0.75em;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+
+
+
+  </style>
+
+
+
+
+
+
+
+  <body>
+
+    <!-- <h1>Principle 7: Arc (1)</h1> -->
+  <!--  <h2><a href="https://cssanimation.rocks/principles/" target="_parent">Animation Principles for the Web</h2> -->
+    <article class="principle sevena">
+
+    <div class="container-for-container">
+
+
+        <div class="shape-container">
+          <div class="shape a"></div>
+        </div>
+
+    </div>
+
+    <div class="container-for-container2">
+
+
+        <div class="shape-container_two">
+          <div class="shape2"></div>
+        </div>
+
+    </div>
+
+  </article>
+
+
+                <div class="shape-containertwo">
+                    <div class="cube"></div>
+                </div>
+
+                <div class="shape-containertwo">
+                    <div class="cube2"></div>
+                </div>
+
+                <div class="shape-container2">
+                    <div class="cube3"></div>
+                </div>
+
+                <div class="shape-container2">
+                    <div class="cube4"></div>
+                </div>
+
+                <div class="shape-container2">
+                    <div class="cube5"></div>
+                </div>
+
+                <div class="shape-container3">
+                    <div class="cube6"></div>
+                </div>
+
+
+  </body>
+</html>
